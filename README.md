@@ -3,10 +3,10 @@
 Uses an ESP866 to connect to salesforce, login via OAuth user/password flow and create platform event records
 This is an example based on the trailhead project "Build an IoT Integration with Electric Imp"(https://trailhead.salesforce.com/projects/workshop-electric-imp)
 The ESP8266 replaces the Electric Imp with minimal change to the instructions for the badge
- 
-You will need an ESP8266 (I am using a NodeMCU 1.0), a DHT11 (or DHT22) temp/humidity sensor, and a switch/5k resistor (or a light sensitive switch/resistor)
- 
-## Changes required ##
+
+You will need an ESP8266 (I am using a NodeMCU 1.0, pin names may vary with other boards), a DHT11 (or DHT22) temp/humidity sensor, and a switch/5k resistor (or a light sensitive switch/resistor)
+
+## Changes required for Badge Steps##
  
 * Step 2 - Set Up the Electric Imp Hardware
 Ignore this step, connect your DHT11 (or DHT22) sensor to +3.3v, GND and D0 (data) of your ESP8266
@@ -19,8 +19,7 @@ Rather than the URL https://agent.electricimp.com/???? you can use http://localh
 Ignore this, simply flash this code to your ESP8266
  
 * Step 11 - Place Your impExplorer Kit in a Refrigerator 
-Place the ESP8266 in your refrigerator, you will need a way to trigger the switch, alternatively you could use a light sensor (as per the electric imp)
- This would need additional code to support it. If you are using an NodeMCU you can easily power it from a USB mobile phone battery
+Place the ESP8266 in your refrigerator, you will need a way to trigger the switch, alternatively you could use a light sensor (as per the electric imp) however this would need additional code to support it. If you are using an NodeMCU or similar you can easily power it from a USB mobile phone battery.
  
 You can simply use the code in loop() to generate random data to test with if you don't wish to do this
  
