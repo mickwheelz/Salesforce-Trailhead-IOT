@@ -1,4 +1,4 @@
-#ESP8266 to Salesforce Sketch for Trailhead IoT Project
+# ESP8266 to Salesforce Sketch for Trailhead IoT Project #
  
 Uses an ESP866 to connect to salesforce, login via OAuth user/password flow and create platform event records
 This is an example based on the trailhead project "Build an IoT Integration with Electric Imp"(https://trailhead.salesforce.com/projects/workshop-electric-imp)
@@ -6,7 +6,7 @@ The ESP8266 replaces the Electric Imp with minimal change to the instructions fo
  
 You will need an ESP8266 (I am using a NodeMCU 1.0), a DHT11 (or DHT22) temp/humidity sensor, and a switch/5k resistor (or a light sensitive switch/resistor)
  
- ##Changes required;
+ ## Changes required ##
  
  * Step 2 - Set Up the Electric Imp Hardware
  Ignore this step, connect your DHT11 (or DHT22) sensor to +3.3v, GND and D0 (data) of your ESP8266
@@ -30,6 +30,6 @@ You will need an ESP8266 (I am using a NodeMCU 1.0), a DHT11 (or DHT22) temp/hum
  
  2. You will need to generate certificate fingerprints for both your login url (e.g login.salesforce.com) and your instance url (e.g eu1.salesforce.com) and insert them below
  you can do this by running this command on macOS/*nix 
- "echo | openssl s_client -connect <your instance url>:443 | openssl x509 -fingerprint -noout"
+ `echo | openssl s_client -connect <your instance url>:443 | openssl x509 -fingerprint -noout`
  
  3. You will need to change the username, password, token, client secret and client key to match your org's configuration
