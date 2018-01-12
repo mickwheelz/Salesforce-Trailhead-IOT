@@ -13,7 +13,7 @@ Ignore this step, connect your DHT11 (or DHT22) sensor to +3.3v, GND and D0 (dat
 Connect a switch between D1 and +3.3v and a 5k resistory from D1 to GND
  
 * Step 4 - Create a Salesforce Connected Appplication
-Rather than the URL https://agent.electricimp.com/???? you can use http://localhost/_auth in Step 5, section 2
+Rather than the URL https://agent.electricimp.com/deviceId, you will use http://localhost/_auth in Step 5, Section 2
  
 * Step 10 - Build and Run the Electric Imp Application
 Ignore this, simply flash this code to your ESP8266
@@ -32,3 +32,9 @@ You can simply use the code in loop() to generate random data to test with if yo
 `echo | openssl s_client -connect <your instance url>:443 | openssl x509 -fingerprint -noout`
  
 3. You will need to change the username, password, token, client secret and client key to match your org's configuration
+
+## Next Steps ##
+
+This code is fairly generic and could easily be used/extended to create any type of record you want inside salesforce (Custom or Standard Objects, Platform Events, etc)
+
+You could also extend it to allow for reading of data from records, or anything else the salesforce REST APIs can do! You could also add additonal sensors, etc to your ESP8266 to allow for more advanced IoT implementations.
