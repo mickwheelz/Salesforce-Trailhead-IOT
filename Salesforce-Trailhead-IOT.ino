@@ -250,13 +250,13 @@ void setup() {
 //standard arduino loop method
 void loop() {
 
-  /*Uncomment if using actuall DHT sensor & Door Switch
+  /*Uncomment if using actual DHT sensor & Door Switch
   if (isnan(dht.readTemperature())) { 
     //chill, sensor isn't ready yet
   }
   else {
       JsonObject& event = buildPlatformEvent(dht.readTemperature(), dht.readHumidity(), digitalRead(doorPin);
-      bool insertSuccess = insertSObject("", event);
+      bool insertSuccess = insertSObject("Smart_Fridge_Reading__e", event);
       if(insertSuccess) {
         Serial.println("Record Inserted Successfully!");
       }
