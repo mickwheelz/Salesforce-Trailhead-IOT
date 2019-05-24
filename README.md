@@ -1,7 +1,7 @@
 # ESP8266 to Salesforce Sketch for Trailhead IoT Project #
  
 Uses an ESP866 to connect to salesforce, login via OAuth user/password flow and create platform event records
-This is an example based on the trailhead project "Build an IoT Integration with Electric Imp"(https://trailhead.salesforce.com/projects/workshop-electric-imp)
+This is an example based on the trailhead project [Build an IoT Integration with Electric Imp](https://trailhead.salesforce.com/projects/workshop-electric-imp)
 The ESP8266 replaces the Electric Imp with minimal change to the instructions for the badge
 
 You will need an ESP8266 (I am using a NodeMCU 1.0, pin names may vary with other boards), a DHT11 (or DHT22) temp/humidity sensor, and a switch/5k resistor (or a light sensitive switch/resistor)
